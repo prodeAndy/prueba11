@@ -1,0 +1,174 @@
+body{
+   width: 100%;
+    
+    
+}
+.contenedorPadre{
+    background: #2c3e50;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    padding: 0px 20px
+    
+}
+
+.contenedorLogo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
+    
+}
+
+.contenedorLogo img{
+ width: 50px;  
+    padding: 0px 5px;
+}
+.contenedorLogo h1{
+    color: #fff;
+    font-family: fuente-gruesa;
+    
+}
+
+.contenedorMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    
+         
+}
+
+.contenedorMenu a{
+    color: #fff;
+    background: #c0392b;
+    text-decoration: none;
+    font-family: fuente-gruesa;
+    padding: 10px ;
+    width: 25%;
+    text-align: center;
+}
+
+.contenedorMenu a:hover{
+    background: #e74c3c;
+    color: #fff;   
+    
+}
+/*------------------------------------menu------------------------*/
+.contenedorPadreContenido{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+    padding: 0px 0px 0px 20px;
+}
+.contenedorContenidohijo{
+     width: 70%;
+}
+
+.contenedorContenidohijo h1{
+    font-family: fuente-delgada;
+    
+}
+
+.contenedorContenidohijo p{
+    font-family: fuente-delgada;
+}
+
+.propaganda{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    background: #e67e22;
+    justify-content: center;
+    align-items:center 
+   
+    
+    
+}
+.hijo1propaganda{
+    background: #d35400;
+    width:90%;
+    height: 200px;
+    margin: 25px
+            
+}
+
+/*------------------------------------Contenido------------------------*/
+
+
+.contenedorPie{
+    background: #2c3e50;
+    padding: 20px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between
+    
+}
+.contenedorPieMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+}
+.contenedorPieMenu a{
+    color: #fff;
+    background: #c0392b;
+    text-decoration: none;
+    font-family: fuente-gruesa;
+    padding: 10px ;
+    
+    
+}
+
+.contenedorPieRedes{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.contenedorPieRedes a{
+    color: #fff;
+    background:  #e67e22;
+    text-decoration: none;
+    font-family: fuente-gruesa;
+    padding: 10px ;
+    
+}
+.contenedorPieMenu > a:hover{
+    color: #fff;
+    background: #e74c3c;
+}
+
+/*------------------------------adaptable------------------------------*/
+@media (max-width: 700px)/*aqui le estas diciendo que estos cambios se hagan apartir de un tamaño de 700px*/{
+    .contenedorPadre{
+    background: #2c3e50;
+    display: flex;
+    flex-flow: column nowrap;/*para que el menu pase abajo del logo se cambio row por column*/
+    justify-content:center;/*para que se centren */
+    align-items: center;/*para que se centren */
+   
+    
+}
+    .contenedorMenu{
+        margin-bottom: 10px;/*margin inferior del munu */
+        width: 80%;
+    }
+    
+    .contenedorPadreContenido{
+    display: flex;
+    flex-flow: column nowrap;/*se le cambio row por column */
+    align-content: stretch;
+    padding: 0px 20px 0px 20px;/*margen de los lados sino queda muy pegado a las esquinas*/
+     text-align: justify;/*este es como el el word para que se vea mejor el texto*/
+}
+    .contenedorContenidohijo{
+     width: 100%;/*ocupa el 100% del contenedor padre antes tenia el 70% y quedaba como las gilas*/
+}
+    .propaganda{
+        width: 100%;/*lo mismo ahora ocupa el 100% antes ocupaba 30%*/
+        margin-bottom: 20px;/*para que no se peque al fooder no me acuerdo como es que se escrbe fotter*/
+    }
+}
